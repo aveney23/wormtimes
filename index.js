@@ -7,10 +7,11 @@ const client = new commando.CommandoClient({
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
   });
-  client.registry
+client.registry
     .registerDefaultTypes()
     .registerGroups([
-        ['fun', 'Fun Commands']
+        ['fun', 'Fun'],
+        ['debug', 'Debug']
     ])
     .registerDefaultGroups()
     .registerDefaultCommands()
@@ -21,4 +22,4 @@ client.on('ready', () => {
     // }
   // });
   
-  client.login('NjM2OTcxMDkyMzY3Mzc2NDE0.XbL76g.KfVrWLJa22gPiIdG_bhzY-K9Bxs');
+  client.login('NjM2OTcxMDkyMzY3Mzc2NDE0.XbMqmg.xLc2BNI08sHU33A6PJuU934q7eo');
