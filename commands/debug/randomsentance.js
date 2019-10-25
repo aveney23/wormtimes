@@ -4,11 +4,11 @@ var randomWords = require('random-words');
 module.exports = class RandomSentanceDebug extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'randomsentance',
+            name: 'randomsentence',
             group: 'debug',
-            memberName: 'randomsentance',
+            memberName: 'randomsentence',
             description: 'Used for debugging the Word Service',
-            examples: ['randomword']
+            examples: ['randomsentence']
         });
     }
     run (msg) {
