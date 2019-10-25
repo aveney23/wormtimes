@@ -15,10 +15,10 @@ client.on('ready', () => {
     .registerDefaultGroups()
     .registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, 'commands'));
-  client.on('message', msg => {
-    if (msg.content === 'yee') {   //original responses
-      msg.reply('haw');
-    }
-  });
+  // client.on('message', msg => {
+    // if (msg.content === 'yee') {   //original responses
+      // msg.reply('haw');
+    // }
+  // });
   
   client.login('NjM2OTcxMDkyMzY3Mzc2NDE0.XbL76g.KfVrWLJa22gPiIdG_bhzY-K9Bxs');
