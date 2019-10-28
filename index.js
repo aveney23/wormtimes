@@ -1,5 +1,6 @@
 const commando = require("discord.js-commando")
 const path = require('path');
+const token = require('./token')
 const client = new commando.CommandoClient({
   commandPrefix: '!',
   owner: '202098742013198336'
@@ -22,4 +23,4 @@ client.registry
     // }
   // });
   
-  client.login('token');
+  client.login(token.token);
