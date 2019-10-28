@@ -1,18 +1,17 @@
 const commando = require("discord.js-commando")
 const client = new commando.CommandoClient();
+const path = require('path')
+const token = require('./token')
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
   });
-  
-  client.on('message', msg => {
-    if (msg.content === 'yee') {   //original responses
-      msg.reply('haw');
-    }
-  });
-  client.on('message', msg => {
-    if (msg.content === 'yeet') {   //original responses
-      msg.reply('yoted');
-    }
-  });
-  
-  client.login('NjM2OTcxMDkyMzY3Mzc2NDE0.XbHXpg.Gv2kopVwBdTF9kNtyEvZ_m8wvKA'); 
+  client.registry
+    .registerDefaultTypes()
+    .registerGroups([
+        ['fun', 'Fun'],
+        ['debug', 'Debug']
+    ])
+    .registerDefaultGroups()
+    .registerDefaultCommands()
+    .registerCommandsIn(path.join(__dirname, 'commands'));
+  client.login(token.token);
