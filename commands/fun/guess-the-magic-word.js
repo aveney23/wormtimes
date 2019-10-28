@@ -21,6 +21,7 @@ module.exports = class ReadyCommand extends commando.Command {
         var collector = new discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         // console.log(collector);
         collector.on('collect', message1 => {
+            // This loop checks if the message with the word has been sent, then it analizes it to see if its correct. If its all done, it breaks out of the loop.
             if (done) {
                 return;
             }
