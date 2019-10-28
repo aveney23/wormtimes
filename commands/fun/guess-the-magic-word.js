@@ -1,17 +1,17 @@
 // This command checks to see if the bot is online and is working properly. If this command fails, nothing else will work.
 const commando = require('discord.js-commando')
+const randomwords = require('')
 module.exports = class ReadyCommand extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'ready',
+            name: 'gtmw',
             group: 'fun',
-            memberName: 'ready',
-            description: 'This command checks to see if the bot is online and is working properly. If this command fails, nothing else will work.',
-            examples: ['ready']
+            memberName: 'gtmw',
+            description: 'Can you guess the word I am thinking about?',
+            examples: ['gtmw']
         });
     }
     run (msg) {
-        msg.reply("I'm alive, alert, awake, and enthusiastic.");
+        
     }
 }
-a
