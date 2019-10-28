@@ -19,6 +19,10 @@
   "dependencies": {
     "discord.js": "^11.5.1",
     "discord.js-commando": "^0.10.0",
+<<<<<<< HEAD
     "random-words": "^1.1.0"
+=======
+    "electron": "^7.0.0"
+>>>>>>> e3dc4323612a5e24bb6b580ff3be8945c2c40a07
   }
 }
