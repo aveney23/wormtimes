@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/aveney23/wormtimes#readme",
   "dependencies": {
-    "electron": "^7.0.0"
+    "discord.js": "^11.5.1",
+    "discord.js-commando": "^0.10.0"
   }
 }
