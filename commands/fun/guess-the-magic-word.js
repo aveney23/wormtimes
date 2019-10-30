@@ -1,7 +1,9 @@
 // This command checks to see if the bot is online and is working properly. If this command fails, nothing else will work.
 const commando = require('discord.js-commando')
+
 const randomWords = require('random-words')
 const discord = require('discord.js')
+
 module.exports = class ReadyCommand extends commando.Command {
     constructor(client) {
         super(client, {
@@ -12,6 +14,7 @@ module.exports = class ReadyCommand extends commando.Command {
             examples: ['gtmw']
         });
     }
+
     run (message) {
         var done = false;
         message.channel.sendMessage("let me think of a word");
@@ -38,5 +41,6 @@ module.exports = class ReadyCommand extends commando.Command {
                 return;
             }
         })
+
     }
 }
