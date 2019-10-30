@@ -14,4 +14,3 @@ module.exports = class ReadyCommand extends commando.Command {
         msg.reply("I'm alive, alert, awake, and enthusiastic.");
     }
 }
-a
