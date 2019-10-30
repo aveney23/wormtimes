@@ -14,4 +14,5 @@ client.on('ready', () => {
     .registerDefaultGroups()
     .registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, 'commands'));
+    // If you are cloning this repository for yourself, replace token.token with your token.
   client.login(token.token);
