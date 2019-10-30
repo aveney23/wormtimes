@@ -16,7 +16,7 @@ module.exports = class ReadyCommand extends commando.Command {
         .setAuthor("The Ratting Machine")
         .setColor(0xfc03ca)
         .setTimestamp(Date.now)
-        .setTitle("Rating for " + msg.member.name)
+        .setTitle("Rating for " + msg.member.displayName)
         .addField("Rating", Math.round(Math.random() * 10) + "/10")
         .addField("Evaluation", "I think you are a little " + randomWords());
         msg.channel.sendEmbed(embed);
