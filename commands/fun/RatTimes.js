@@ -5,7 +5,7 @@ module.exports = class RatCommand extends commando.Command {
         super(client, {
             name: 'jazzrat',
             group: 'fun',
-            memberName: 'JazzRat',
+            memberName: 'jazzrat',
             description: 'When you Say jazzrat it will show a different piture of rats',
             examples: ['rat']
         });
