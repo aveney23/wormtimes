@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 module.exports = class RatCommand extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'JazzRat',
+            name: 'jazzrat',
             group: 'fun',
             memberName: 'JazzRat',
             description: 'When you Say JazzRat it will show a different piture of rats',
