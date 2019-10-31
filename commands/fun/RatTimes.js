@@ -6,7 +6,7 @@ module.exports = class RatCommand extends commando.Command {
             name: 'jazzrat',
             group: 'fun',
             memberName: 'JazzRat',
-            description: 'When you Say JazzRat it will show a different piture of rats',
+            description: 'When you Say jazzrat it will show a different piture of rats',
             examples: ['rat']
         });
     }
