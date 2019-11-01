@@ -15,10 +15,10 @@ module.exports = class RatCommand extends commando.Command {
         ,"The voices say no", "cannot predict now", "Don't Count on it", "Yes, Definitely", "You may rely on it",
         "Ask again later", "My reply is no", "I have no clue man", "I mean, it could happen?", "For Certain ;)", "Yes Sir", "No Sir", "I mean... Sure" 
     ]
-        let text = text[Math.round(Math.random() * text.length)]
+        let wow = text[Math.round(Math.random() * text.length)]
         var embed= new Discord.RichEmbed()
         .setColor(any)
-        .setTitle(text)
+        .setTitle(wow)
         .setImage("https://www.vermontcountrystore.com/ccstore/v1/images/?source=/file/v436715391556442924/products/51327.main.png&height=500&width=500&quality=0.88");
         msg.channel.sendEmbed(embed);
         
