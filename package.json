@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/aveney23/wormtimes#readme",
   "dependencies": {
+    "codacy-coverage": "^3.4.0",
     "discord.js": "^11.5.1",
     "discord.js-commando": "^0.10.0",
     "electron": "^7.0.0"

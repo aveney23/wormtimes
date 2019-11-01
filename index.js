@@ -1,10 +1,13 @@
 const commando = require("discord.js-commando")
 const client = new commando.CommandoClient();
 const path = require('path')
-const token = require('./token')
+// const token = require('./token')
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
   });
+client.on('message', (message) => {
+  
+});
   client.registry
     .registerDefaultTypes()
     .registerGroups([
@@ -17,4 +20,4 @@ client.on('ready', () => {
 
     // If you are cloning this repository for yourself, replace token.token with your token.
 
-  client.login(token.token);
+  client.login(process.env.token);
