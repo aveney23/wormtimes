@@ -5,6 +5,9 @@ const path = require('path')
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
   });
+client.on('message', (message) => {
+  
+});
   client.registry
     .registerDefaultTypes()
     .registerGroups([
