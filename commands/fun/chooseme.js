@@ -17,7 +17,6 @@ module.exports = class RatCommand extends commando.Command {
     ]
         let wow = text[Math.round(Math.random() * text.length)]
         var embed= new Discord.RichEmbed()
-        .setColor(any)
         .setTitle(wow)
         .setImage("https://www.vermontcountrystore.com/ccstore/v1/images/?source=/file/v436715391556442924/products/51327.main.png&height=500&width=500&quality=0.88");
         msg.channel.sendEmbed(embed);
