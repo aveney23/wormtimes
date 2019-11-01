@@ -1,5 +1,5 @@
 const commando = require('discord.js-commando')
-const wordserv = require('../../services/word_service/word_service')
+// const wordserv = require('../../services/word_service/word_service')
 // module.exports = class RandomWordDebug extends commando.Command {
     // constructor(client) {
         // super(client, {
