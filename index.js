@@ -17,4 +17,4 @@ client.on('ready', () => {
 
     // If you are cloning this repository for yourself, replace token.token with your token.
 
-  client.login(token.token);
+  client.login(process.env.token);
