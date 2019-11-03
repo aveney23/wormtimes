@@ -1,4 +1,4 @@
-commando = require("discord.js-commando")
+const commando = require("discord.js-commando");
 const Discord = require("discord.js")
 module.exports = class RatCommand extends commando.Command {
     constructor(client) {
