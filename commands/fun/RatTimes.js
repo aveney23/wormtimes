@@ -19,4 +19,4 @@ module.exports = class RatCommand extends commando.Command {
         .setImage(image);
         msg.channel.sendEmbed(embed);
         
-    }} 
+    }}; 
