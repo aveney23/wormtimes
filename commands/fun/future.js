@@ -6,8 +6,8 @@ module.exports = class RatCommand extends commando.Command {
             name: "fortunecookie",
             group: "fun",
             memberName: "fortunecookie",
-            description: "When you type !fortunecookie it will give you a fortune",
-            examples: ["you will be missed"]
+            description: "Provides a fortune for you. Different fortune every time!",
+            examples: ["!fortunecookie"]
         });
     }
     run (msg) {
