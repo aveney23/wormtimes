@@ -6,8 +6,13 @@ module.exports = class RatCommand extends commando.Command {
             name: "fortunecookie",
             group: "fun",
             memberName: "fortunecookie",
+<<<<<<< HEAD
             description: "When you type !fortunecookie it will give you a fortune",
             examples: ["you will be missed"]
+=======
+            description: "Provides a fortune for you. Different fortune every time!",
+            examples: ["!fortunecookie"]
+>>>>>>> 960c5c439cfa049b2598ac97b78867eadc6849fa
         });
     }
     run (msg) {
@@ -19,6 +24,10 @@ module.exports = class RatCommand extends commando.Command {
         .setTitle(image);
         msg.channel.sendEmbed(embed);
         
+<<<<<<< HEAD
     }}; 
 
   
+=======
+    }}; 
+>>>>>>> 960c5c439cfa049b2598ac97b78867eadc6849fa
