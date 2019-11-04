@@ -6,17 +6,18 @@ module.exports = class RatCommand extends commando.Command {
             name: "fortunecookie",
             group: "fun",
             memberName: "fortunecookie",
-            description: "Provides a fortune for you. Different fortune every time!",
-            examples: ["!fortunecookie"]
+            description: "When you type !fortunecookie it will give you a fortune",
+            examples: ["you will be missed"]
         });
     }
     run (msg) {
         let fortune = [
             
         ]
-        let image = fortune[Math.round(Math.random() * fortune.length)];
+        let realfortune = fortune[Math.round(Math.random() * fortune.length)];
         var embed= new Discord.RichEmbed()
-        .setTitle(image);
+        .setTitle("Here's your fortune!")
+        .setDescription(realfortune);
         msg.channel.sendEmbed(embed);
         
     }}; 
