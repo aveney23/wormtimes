@@ -1,12 +1,13 @@
 const commando = require("discord.js-commando");
 const client = new commando.CommandoClient();
 const path = require("path");
+const msgserv = require("./services/message_service")
 // const token = require("./token")
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`);
   });
-client.on("message", () => {
-  
+client.on("message", (message) => {
+  msgserv.analMess(message);
 });
   client.registry
     .registerDefaultTypes()
