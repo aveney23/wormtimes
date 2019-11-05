@@ -14,7 +14,7 @@ client.on("message", (message) => {
     .registerGroups([
         ["fun", "Fun"],
         ["debug", "Debug"]
-    ]);
+    ])
     .registerDefaultGroups()
     .registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, "commands"));
