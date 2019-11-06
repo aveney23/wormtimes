@@ -12,7 +12,7 @@ module.exports = {
     },
     writeUserConfig(id, obj) {
         if (obj === 0) {
-            jsonfile.writeFile(id + ".json", this.getUserConfig("default", function(err) {}));
+            jsonfile.writeFile(id + ".json", this.getUserConfig("default"));
         }
         jsonfile.writeFile(id + ".json", obj);
     }
