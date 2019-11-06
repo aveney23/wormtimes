@@ -5,9 +5,8 @@ module.exports = {
     jsonfile.readFile(id + ".json", function (err, obj) {
         if (err) {
             console.log(err);
-            callback(err);
+            return callback(err);
         }
-        callback();
         return obj;
     });
     },
