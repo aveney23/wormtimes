@@ -11,7 +11,7 @@ module.exports = {
     });
     },
     writeUserConfig(id, obj) {
-        if (obj == 0) {
+        if (obj === 0) {
             jsonfile.writeFile(id + ".json", getUserConfig("default", function(err) {}));
         }
         jsonfile.writeFile(id + ".json", obj);
