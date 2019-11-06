@@ -7,6 +7,7 @@ module.exports = {
             console.log(err);
             callback(err);
         }
+        callback();
         return obj;
     });
     },
