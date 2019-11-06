@@ -1,9 +1,8 @@
-import {GuildMember} from "discord.js";
 const jsonfile = require("jsonfile");
 module.exports = {
     
     getUserConfig(id, callback) {
-    jsonfile.readFileSync(id + ".json", function (err, obj) {
+    jsonfile.readFile(id + ".json", function (err, obj) {
         if (err) {
             console.log(err);
             callback(err);
@@ -13,8 +12,8 @@ module.exports = {
     },
     writeUserConfig(id, obj) {
         if (obj == 0) {
-            jsonfile.writeFileSync(id + ".json", getUserConfig("default", function(err) {}));
+            jsonfile.writeFile(id + ".json", getUserConfig("default", function(err) {}));
         }
-        jsonfile.writeFileSync(id + ".json", obj);
+        jsonfile.writeFile(id + ".json", obj);
     }
 };
