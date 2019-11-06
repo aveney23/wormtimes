@@ -18,7 +18,7 @@ module.exports = class RatCommand extends commando.Command {
     run (msg) {
         let fortune = [
             
-        ]
+        ];
         let image = fortune[Math.round(Math.random() * fortune.length)];
         var embed= new Discord.RichEmbed()
         .setTitle(image);
