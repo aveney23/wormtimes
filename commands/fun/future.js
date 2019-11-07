@@ -11,20 +11,12 @@ module.exports = class RatCommand extends commando.Command {
         });
     }
     run (msg) {
-        let fortune = ["run.","behind you","please wake up. This is not just a cookie. We are very worried about you.","The fortune you seek is in another cookie.",
-        "A closed mouth gathers no feet.",
-        "A conclusion is simply the place where you got tired of thinking.",
-        "A cynic is only a frustrated optimist.",
-        "A foolish man listens to his heart. A wise man listens to cookies.",
-        "You will die alone and poorly dressed.",
-        "A fanatic is one who can't change his mind, and won't change the subject.",
-        "If you look back, you'll soon be going that way.",
-        "You will live long enough to open many fortune cookies.",
-        "An alien of some sort will be appearing to you shortly.",
-        "Do not mistake temptation for opportunity.",
-        "Flattery will go far tonight.",
-          
-        ]
+        let fortune = [ "run.", "behind you", "you will die alone and poorly dressed", "The answer you seek is in another cookie", 
+        "Please wake up. Your mother and father are very worried about you. This is not just a cookie", "You will get in an argument with a close friend very soon",
+        "You will receive a letter from a loved one very soon", "You will live long enough to open another cookie", 
+        "Your future is undefined", 
+            
+        ];
         let image = fortune[Math.round(Math.random() * fortune.length)];
         var embed= new Discord.RichEmbed()
         .setTitle(image);
