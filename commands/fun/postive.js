@@ -21,10 +21,10 @@ module.exports = class RatCommand extends commando.Command {
             "http://www.catersnews.com/wp-content/uploads/2016/11/Screen-Shot-2016-11-02-at-12.09.24-PM-800x498.png", "https://www.suggestedpost.eu/wp-content/uploads/2016/06/smiling-animals-1.jpeg",
             "https://www.suggestedpost.eu/wp-content/uploads/2016/06/smiling-animals-2.jpg", "https://i.ytimg.com/vi/cYNlJYQI3Uw/maxresdefault.jpg",
         ];
-        let  = pos[Math.round(Math.random() * pos.length)];
+        let woo  = pos[Math.round(Math.random() * pos.length)];
         let wow = woah[Math.round(Math.random() * woah.length)];
         var embed= new Discord.RichEmbed()
-        .setTitle(pos);
+        .setTitle(woo);
         setImage(wow);
         msg.channel.sendEmbed(embed);
     }}
