@@ -1,9 +1,9 @@
-const commando = require("discord.js-commando");
+const commando = require("discord.js-commando"); 
 const Discord = require("discord.js");
 module.exports = class RatCommand extends commando.Command {
     constructor(client) {
         super(client, {
-            name: "fortunecookie",
+            name: "fortunecookie", 
             group: "fun",
             memberName: "fortunecookie",
             description: "Provides a fortune for you. Different fortune every time!",
@@ -18,7 +18,7 @@ module.exports = class RatCommand extends commando.Command {
             
         ];
         let image = fortune[Math.round(Math.random() * fortune.length)];
-        var embed= new Discord.RichEmbed()
+        var embed= new Discord.RichEmbed()    
         .setTitle(image);
         msg.channel.sendEmbed(embed);
     }}
