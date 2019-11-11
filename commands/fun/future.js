@@ -17,7 +17,7 @@ module.exports = class RatCommand extends commando.Command {
         "Your future is undefined", 
             
         ];
-        let image = fortune[Math.round(Math.random() * fortune.length)];
+        let image = fortune[Math.round(Math.random() * fortune.length)]; //randomizes the fortunes
         var embed= new Discord.RichEmbed()    
         .setTitle(image);
         msg.channel.sendEmbed(embed);
