@@ -21,6 +21,6 @@ module.exports = class RatCommand extends commando.Command {
         var embed= new Discord.RichEmbed()    
         .setTitle(image);
         msg.channel.sendEmbed(embed); //sends funtion
-    };
+    }
 
-}
+};
