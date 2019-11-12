@@ -27,4 +27,4 @@ module.exports = class RatCommand extends commando.Command {
         .setTitle(pos);
         setImage(wow);
         msg.channel.sendEmbed(embed);
-    }}
+    }};
