@@ -1,6 +1,6 @@
 const commando = require("discord.js-commando");
 const Discord = require("discord.js");
-module.exports = class RatCommand extends commando.Command {1
+module.exports = class RatCommand extends commando.Command {
     constructor(client) {
         super(client, {
             name: "positive",
@@ -23,7 +23,7 @@ module.exports = class RatCommand extends commando.Command {1
         let woo  = pos[Math.round(Math.random() * pos.length)]; //randomizes title
         let wow = woah[Math.round(Math.random() * woah.length)]; //randomizes image shown 
         var embed= new Discord.RichEmbed()
-        .setTitle(woo);
-        setImage(wow);
+        .setTitle(woo)
+        .setImage(wow);
         msg.channel.sendEmbed(embed); //sends funtion
     }}
