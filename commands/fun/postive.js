@@ -24,6 +24,6 @@ module.exports = class RatCommand extends commando.Command {
         let wow = woah[Math.round(Math.random() * woah.length)]; //randomizes image shown 
         var embed= new Discord.RichEmbed()
         .setTitle(woo);
-        setImage(wow);
+        .setImage(wow);
         msg.channel.sendEmbed(embed); //sends funtion
     }}
