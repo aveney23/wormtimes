@@ -23,7 +23,7 @@ module.exports = class RatCommand extends commando.Command {
         let woo  = pos[Math.round(Math.random() * pos.length)]; //randomizes title
         let wow = woah[Math.round(Math.random() * woah.length)]; //randomizes image shown 
         var embed= new Discord.RichEmbed()
-        .setTitle(woo);
+        .setTitle(woo)
         .setImage(wow);
         msg.channel.sendEmbed(embed); //sends funtion
     }}
