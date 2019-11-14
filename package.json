@@ -22,6 +22,7 @@
     "discord.js": "^11.5.1",
     "discord.js-commando": "^0.10.0",
     "electron": "^7.0.0",
-    "jsonfile": "^5.0.0"
+    "jsonfile": "^5.0.0",
+    "random-words": "^1.1.0"
   }
 }
