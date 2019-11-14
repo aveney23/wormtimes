@@ -1,17 +1,17 @@
 // This command checks to see if the bot is online and is working properly. If this command fails, nothing else will work.
-const commando = require('discord.js-commando')
+const commando = require("discord.js-commando");
 
-const randomWords = require('random-words')
-const discord = require('discord.js')
+const randomWords = require("random-words");
+const discord = require("discord.js");
 
 module.exports = class ReadyCommand extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'gtmw',
-            group: 'fun',
-            memberName: 'gtmw',
-            description: 'Can you guess the word I am thinking about?',
-            examples: ['gtmw']
+            name: "gtmw",
+            group: "fun",
+            memberName: "gtmw",
+            description: "Can you guess the word I am thinking about?",
+            examples: ["gtmw"]
         });
     }
 
@@ -23,7 +23,7 @@ module.exports = class ReadyCommand extends commando.Command {
         message.channel.sendMessage("I've got it! Try and guess what it is.");
         var collector = new discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
         // console.log(collector);
-        collector.on('collect', message1 => {
+        collector.on("collect", message1 => {
             // This loop checks if the message with the word has been sent, then it analizes it to see if its correct. If its all done, it breaks out of the loop.
             if (done) {
                 return;
